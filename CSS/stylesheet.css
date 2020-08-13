@@ -1,0 +1,114 @@
+/****************************TAG STYLES*******************************/
+
+/****************************CLASS STYLES*******************************/
+
+/**Home Page**/
+.home-container {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("Images/fish_background.jpg");
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1000px) {
+    .home-container{
+        background-size: 1000px auto;
+    }
+}
+
+/**Top Section**/
+
+.top-container {
+    padding: 2%;
+}
+
+.top-container > h1{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    display: inline-block;
+    padding: 0.5% 1% 1% 1%;
+    margin-top:0;
+    font-size: 6rem;
+}
+
+.top-container > h2{
+    color: white;
+    background-color: black;
+    display: inline-block;
+    padding: 0.5% 1% 1% 1%;
+    font-size: 1.5rem;
+    margin-left: 3%;
+}
+.top-title {
+    margin-left: 3%;
+}
+
+.bottom-title {
+    margin-left: 8%;
+}
+
+/**  About Section  **/
+
+#about {
+    margin: 10%;
+    text-align: center;
+    color: white;
+}
+
+.about-col > h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.about-col > h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-col > p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.headshot-img {
+    width: 70%;
+    margin-right: 20%;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: #2A3754;
+    border-width: .5rem;
+}
+
+/****************************BOOTSTRAP CLASS OVERRIDE STYLES*******************************/
+
+.navbar-nav > li{
+    padding-left:25px;
+}
+
+/* .nav-link {
+    font-family: "Bebas Neue", sans-serif !important;
+}
+
+.navbar-brand {
+    font-family: "Bebas Neue", sans-serif !important;
+} */
+
+.btn {
+    border-radius: 0px;
+    padding: .250rem .75rem;
+    margin-top: 4px;
+}
+
+.bg-dark {
+    background-color: black !important;
+}
+
+.dropdown-item:active {
+    background-color: black !important;
+}
+
+.dropdown-menu {
+    border-radius: 0px;
+    padding: 0px;
+}
