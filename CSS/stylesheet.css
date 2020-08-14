@@ -5,6 +5,11 @@ h1, h2, h3 {
     font-family: 'Playfair Display', serif;
 }
 
+h4, h5, h6 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
 body {
     background-color: black;
 }
@@ -22,10 +27,10 @@ hr {
     margin: 0;
 }
 
-/**Home Page**/
+/************Home Page************/
 .home-container {
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)), url("Images/fish_photo_crop2.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)), url("Images/fish_background_crop.jpg");
     background-size: cover;
     background-position: top right;
     background-repeat: repeat;
@@ -245,7 +250,7 @@ hr {
 .footer {
     background-color: black;
     text-align: center;
-    padding: 2% 0 1% 0;
+    padding: 4% 0 2% 0;
 }
 
 .footer >p{
@@ -254,25 +259,57 @@ hr {
     font-size: .8rem;
 }
 
+.footer-icon {
+    color: white;
+    font-size: 2.5rem;
+    margin: 20px 10px;
+}
+
+/************Contact************/
+.contact-row {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url("Images/beach-graffiti2.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: block;
+    text-align: center;
+}
+
+.page-title {
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+.footer-icon {
+    color: white;
+    font-size: 2.5rem;
+}
+
 
 /****************************BOOTSTRAP CLASS OVERRIDE STYLES*******************************/
+.navbar {
+    height: 4.325rem;
+}
+
 
 .navbar-nav > li{
     padding-left:25px;
 }
 
-/* .nav-link {
-    font-family: "Bebas Neue", sans-serif !important;
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 1.8rem;
 }
 
-.navbar-brand {
-    font-family: "Bebas Neue", sans-serif !important;
-} */
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+}
 
 .btn {
     border-radius: 0px;
     padding: .250rem .75rem;
     margin-top: 4px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .bg-dark {
