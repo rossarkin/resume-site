@@ -2,11 +2,18 @@
 
 h1, h2, h3 {
     color: white;
-    font-family: 'Playfair Display', serif;;
+    font-family: 'Playfair Display', serif;
 }
 
 body {
     background-color: black;
+}
+
+hr {
+    border-width: 2px 0 0 0;
+    border-style: solid;
+    border-color: white;
+    width: 6rem;
 }
 
 /****************************CLASS STYLES*******************************/
@@ -74,6 +81,7 @@ body {
 /** About Text **/
 .about-col > h4 {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 .about-col > p {
@@ -94,9 +102,18 @@ body {
     border-width: .5rem;
 }
 
-@media (max-width: 800px){
+/*iPad responsiveness*/
+@media (max-width: 850px){
     #about {
-        margin: 5%;
+        margin: 12% 10% 10% 10%;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-col > h4 {
+        font-size: 1.5rem;
     }
     
     .image-col{
@@ -104,9 +121,139 @@ body {
     }
 
     .headshot-img {
-        width: 12rem;
+        width: 10rem;
+        margin-top: 5%;
     }
 }
+
+/*iPhone responsiveness*/
+@media (max-width: 600px){
+    #about {
+        margin: 35% 10% 10% 10%;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-col > h4 {
+        font-size: 1.2rem;
+    }
+    
+    .image-col{
+        text-align: center;
+    }
+
+    .headshot-img {
+        width: 10rem;
+        margin-top: 5%;
+    }
+}
+
+/** Work and Projects (Homepage bottom) **/
+
+#work-and-projects {
+    margin-top: 18%;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.wap-title {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.wap-row {
+    margin: 5% 10% 0% 10%;
+}
+
+.wap-col {
+    padding: 10;
+}
+
+.wap-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.wap-subtitle {
+    font-weight: 700;
+}
+
+.mobile-btn {
+    display: none;
+}
+
+/** iPhone Responsiveness**/
+@media (max-width: 850px){
+    #work-and-projects {
+        margin-top: 35%;
+    }
+
+    .mobile-btn {
+        display: inline-block;
+    }
+
+    .wap-title {
+        font-size: 2rem;
+    }
+
+    .wap-card {
+        display: none;
+    }
+}
+
+@media (max-width: 850px){
+    #work-and-projects {
+        margin-top: 25%;
+    }
+
+    .mobile-btn {
+        display: inline-block;
+    }
+
+    .wap-title {
+        font-size: 2rem;
+    }
+
+    .wap-card {
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    #work-and-projects {
+        margin-top: 35%;
+    }
+
+    .mobile-btn {
+        display: inline-block;
+    }
+
+    .wap-title {
+        font-size: 2rem;
+    }
+
+    .wap-card {
+        display: none;
+    }
+}
+
+/** Footer **/
+.footer {
+    background-color: black;
+    text-align: center;
+    padding: 2% 0 1% 0;
+}
+
+.footer >p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
+}
+
 
 /****************************BOOTSTRAP CLASS OVERRIDE STYLES*******************************/
 
@@ -139,4 +286,13 @@ body {
 .dropdown-menu {
     border-radius: 0px;
     padding: 0px;
+}
+
+.card-text {
+    margin-top: 5px;
+}
+
+.card-header {
+    border-bottom: 2px solid rgb(255, 255, 255) !important;
+    border-bottom-left-radius: ;
 }
