@@ -27,10 +27,21 @@ hr {
     margin: 0;
 }
 
+.link:hover, .link:visited, .link:link {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.divider {
+    width: 50%;
+    text-align: center;
+    margin: 5%;
+}
+
 /************Home Page************/
 .home-container {
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)), url("Images/fish_background_crop.jpg");
+    background-image: url("Images/fish_background_crop.jpg");
     background-size: cover;
     background-position: top right;
     background-repeat: repeat;
@@ -53,7 +64,7 @@ hr {
     font-weight: 800;
     display: inline-block;
     padding: 0;
-    font-size: 6rem;
+    font-size: 8vmax;
 }
 
 .top-title {
@@ -79,7 +90,7 @@ hr {
 
 .about-title {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 4vmax;
     padding: 10% 5% 0% 5%;
 }
 
@@ -87,10 +98,12 @@ hr {
 .about-col > h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    font-size: 2vmax;
 }
 
 .about-col > p {
     font-family: 'Montserrat', sans-serif;
+    font-size:1vmax;
 }
 
 /** Headshot Formatting **/
@@ -99,7 +112,7 @@ hr {
 }
 
 .headshot-img {
-    width: 16rem;
+    width: 24vmax;
     margin-top: 10%;
     border-radius: 100%;
     border-style: solid;
@@ -158,14 +171,14 @@ hr {
 /** Work and Projects (Homepage bottom) **/
 
 #work-and-projects {
-    margin-top: 18%;
+    margin-top: 16%;
     text-align: center;
     line-height: 1.2;
 }
 
 .wap-title {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 3vmax;
 }
 
 .wap-row {
@@ -185,6 +198,15 @@ hr {
 
 .wap-subtitle {
     font-weight: 700;
+    font-size: 1.5vmax;
+}
+
+.wap-card-text {
+    font-size: 1vmax;
+}
+
+.wap-btn {
+    font-size: .8vmax;
 }
 
 .mobile-btn {
@@ -266,23 +288,92 @@ hr {
 }
 
 /************Contact************/
-.contact-row {
+
+.contact-main-row {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url("Images/beach-graffiti2.jpg");
     background-size: cover;
     background-position: center center;
+}
+
+.contact-row {
     display: block;
     text-align: center;
 }
 
-.page-title {
-    font-weight: 900;
-    font-size: 5rem;
+.sub-row {
+    margin: 3%;
 }
 
-.footer-icon {
-    color: white;
-    font-size: 2.5rem;
+.page-title {
+    font-weight: 900;
+    font-size: 5vmax;
 }
+
+.contact-icon-lg {
+    color: white;
+    margin: 3% 3%;
+    font-size: 6vmax;
+}
+
+.contact-icon {
+    color: white;
+    margin: 1%;
+    font-size: 2vmax;
+    vertical-align: middle;
+}
+
+/************Projects************/
+.project-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url("Images/lucha2.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: block;
+    text-align: center;
+    margin: 0px;
+}
+
+.project-bucket {
+    margin-top: 5%;
+}
+
+.project-head-row {
+    display: block;
+    text-align: left;
+}
+
+.project-head-row > hr {
+    text-align: left;
+}
+
+.project-row {
+    text-align: center;
+}
+
+.project-col > p{
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: .9vmax;
+    margin: 3% 20%;
+    color: white;
+}
+
+.project-title {
+    text-align: left;
+    font-size: 2.5vmax;
+}
+
+.project-subtitle {
+    text-align: right;
+    font-size: 1.5vmax;
+    font-weight: 700;
+    margin: 3%;
+}
+
+.project-img {
+    width: 20vmax;
+    vertical-align: middle;
+}
+
 
 
 /****************************BOOTSTRAP CLASS OVERRIDE STYLES*******************************/
