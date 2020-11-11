@@ -35,7 +35,7 @@ hr {
 .divider {
     width: 50%;
     text-align: center;
-    margin: 5%;
+    margin-top: 5%;
 }
 
 /************Home Page************/
@@ -288,7 +288,7 @@ hr {
 /************Contact************/
 
 .contact-main-row {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url("Images/beach-graffiti2.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url("Images/mobile.jpg");
     background-size: cover;
     background-position: center center;
 }
@@ -336,12 +336,9 @@ hr {
 
 .project-head-row {
     display: block;
-    text-align: left;
+    text-align: center;
 }
 
-.project-head-row > hr {
-    text-align: left;
-}
 
 .project-row {
     text-align: center;
@@ -351,14 +348,14 @@ hr {
     font-family: 'Montserrat', sans-serif;
     text-align: left;
     font-size: .9vmax;
-    margin: 3% 20%;
+    margin: 3% 22%;
     color: white;
 }
 
 .project-title {
     font-weight: 700;
-    text-align: left;
     font-size: 2.5vmax;
+    text-align: left;
 }
 
 .project-subtitle {
@@ -390,6 +387,94 @@ hr {
     height: .5vmax;
     width: .5vmax;
     margin: 0.5%;
+}
+
+/*iPhone responsiveness*/
+@media (max-width: 600px){
+    .project-title {
+        font-weight: 700;
+        text-align: center;
+        font-size: 2.5vmax;
+    }
+
+    .carousel-control-prev { 
+        left: 0px; 
+        bottom: -280px;
+        border-bottom: 0; 
+    }
+    
+    .carousel-control-next { 
+        right: 0px; 
+        bottom: -280px;
+        border-bottom: 0; 
+    }
+    .carousel-indicators {
+        bottom: -80px;
+    }
+
+    .carousel-indicators > li {
+        height: 1vmax;
+        width: 1vmax;
+        margin: 0.5%;
+    }
+
+    .project-footer {
+        margin-top: 20%;
+    }
+    
+}
+
+/************Projects************/
+.work-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url("Images/beach-graffiti2-crop.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: block;
+    text-align: center;
+    margin: 0px;
+}
+
+.work-bucket {
+    margin-top: 5%;
+}
+
+.work-head-row {
+    display: block;
+    text-align: center;
+}
+
+.work-row {
+    text-align: center;
+}
+
+.work-col {
+    text-align: center;
+}
+
+.work-col > p{
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: .7vmax;
+    margin: 3% 0%;
+    color: white;
+}
+
+.work-title {
+    font-weight: 700;
+    font-size: 2.5vmax;
+    text-align: left;
+}
+
+.work-subtitle {
+    font-size: .8vmax;
+    font-weight: 700;
+    margin: 3%;
+    text-align: left;
+}
+
+.work-img {
+    width: 10vmax;
+    vertical-align: middle;
 }
 
 
