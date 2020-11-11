@@ -76,6 +76,13 @@ hr {
     margin-left: 5%;
 }
 
+@media (max-width: 600px){
+    .top-title {
+        margin-top: 60%;
+    }
+}
+
+
 /**  About Section  **/
 
 #about {
@@ -127,19 +134,23 @@ hr {
     }
 
     .about-title {
-        font-size: 2rem;
+        font-size: 6vmax;
     }
 
     .about-col > h4 {
-        font-size: 1.5rem;
+        font-size: 3vmax;
     }
-    
+
+    .about-col > p {
+        font-size: 2vmax;
+    }
+
     .image-col{
         text-align: center;
     }
 
     .headshot-img {
-        width: 10rem;
+        width: 24vmax;
         margin-top: 5%;
     }
 }
@@ -147,15 +158,19 @@ hr {
 /*iPhone responsiveness*/
 @media (max-width: 600px){
     #about {
-        margin: 35% 10% 10% 10%;
+        margin: 25% 10% 10% 10%;
     }
 
     .about-title {
-        font-size: 2rem;
+        font-size: 6vmax;
     }
 
     .about-col > h4 {
-        font-size: 1.2rem;
+        font-size: 4vmax;
+    }
+
+    .about-col > p {
+        font-size: 2vmax;
     }
     
     .image-col{
@@ -213,46 +228,29 @@ hr {
     display: none;
 }
 
+/** iPad Responsiveness**/
+@media (max-width: 850px){
+    #work-and-projects {
+        margin-top: 15%;
+    }
+
+    .mobile-btn {
+        display: inline-block;
+    }
+
+    .wap-title {
+        font-size: 4vmax;
+    }
+
+    .wap-card {
+        display: none;
+    }
+}
+
 /** iPhone Responsiveness**/
-@media (max-width: 850px){
-    #work-and-projects {
-        margin-top: 35%;
-    }
-
-    .mobile-btn {
-        display: inline-block;
-    }
-
-    .wap-title {
-        font-size: 2rem;
-    }
-
-    .wap-card {
-        display: none;
-    }
-}
-
-@media (max-width: 850px){
-    #work-and-projects {
-        margin-top: 25%;
-    }
-
-    .mobile-btn {
-        display: inline-block;
-    }
-
-    .wap-title {
-        font-size: 2rem;
-    }
-
-    .wap-card {
-        display: none;
-    }
-}
-
 @media (max-width: 600px){
     #work-and-projects {
-        margin-top: 35%;
+        margin-top: 30%;
     }
 
     .mobile-btn {
@@ -260,7 +258,7 @@ hr {
     }
 
     .wap-title {
-        font-size: 2rem;
+        font-size: 4vmax;
     }
 
     .wap-card {
@@ -358,12 +356,12 @@ hr {
 }
 
 .project-title {
+    font-weight: 700;
     text-align: left;
     font-size: 2.5vmax;
 }
 
 .project-subtitle {
-    text-align: right;
     font-size: 1.5vmax;
     font-weight: 700;
     margin: 3%;
@@ -374,13 +372,28 @@ hr {
     vertical-align: middle;
 }
 
+.carousel-control-prev { 
+    left: -110px; 
+    border-bottom: 0; 
+}
+
+.carousel-control-next { 
+    right: -110px; 
+    border-bottom: 0; 
+}
+
+.carousel-indicators {
+    bottom: -70px;
+}
+
+.carousel-indicators > li {
+    height: .5vmax;
+    width: .5vmax;
+    margin: 0.5%;
+}
 
 
 /****************************BOOTSTRAP CLASS OVERRIDE STYLES*******************************/
-.navbar {
-    height: 4.325rem;
-}
-
 
 .navbar-nav > li{
     padding-left:25px;
@@ -390,6 +403,7 @@ hr {
     font-family: 'Playfair Display', serif;
     font-weight: 800;
     font-size: 1.8rem;
+    text-align: left;
 }
 
 .nav-link {
@@ -413,7 +427,7 @@ hr {
 
 .dropdown-menu {
     border-radius: 0px;
-    padding: 0px;
+    padding: 10px;
 }
 
 .card-text {
