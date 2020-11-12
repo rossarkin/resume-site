@@ -315,7 +315,7 @@ hr {
 
 .page-title {
     font-weight: 900;
-    font-size: 5.5vmax;
+    font-size: 6vmax;
 }
 
 .contact-icon-lg {
@@ -431,6 +431,10 @@ hr {
     transition: .5s ease;
 }
 
+.mobile-col {
+    display: none;
+}
+
 .carousel-control-prev { 
     left: -110px; 
     border-bottom: 0; 
@@ -482,6 +486,14 @@ hr {
 
     .project-footer {
         margin-top: 20%;
+    }
+
+    .mobile-col {
+        display: block;
+    }
+
+    .desktop-col {
+        display:none;
     }
     
 }
