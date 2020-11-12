@@ -38,6 +38,17 @@ hr {
     margin-top: 5%;
 }
 
+.card-subtitle {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-list {
+    margin-top: 3%;
+    color: white;
+    list-style-type: square;
+}
+
 /************Home Page************/
 .home-container {
 
@@ -304,7 +315,7 @@ hr {
 
 .page-title {
     font-weight: 900;
-    font-size: 5vmax;
+    font-size: 5.5vmax;
 }
 
 .contact-icon-lg {
@@ -354,7 +365,7 @@ hr {
 
 .project-title {
     font-weight: 700;
-    font-size: 2.5vmax;
+    font-size: 3vw;
     text-align: left;
 }
 
@@ -394,7 +405,7 @@ hr {
     .project-title {
         font-weight: 700;
         text-align: center;
-        font-size: 2.5vmax;
+        font-size: 5vmax;
     }
 
     .carousel-control-prev { 
@@ -453,7 +464,6 @@ hr {
 
 .work-col > p{
     font-family: 'Montserrat', sans-serif;
-    text-align: left;
     font-size: .7vmax;
     margin: 3% 0%;
     color: white;
@@ -461,21 +471,48 @@ hr {
 
 .work-title {
     font-weight: 700;
-    font-size: 2.5vmax;
-    text-align: left;
-}
 
-.work-subtitle {
-    font-size: .8vmax;
-    font-weight: 700;
-    margin: 3%;
-    text-align: left;
 }
 
 .work-img {
-    width: 10vmax;
+    width: 20rem;
     vertical-align: middle;
+    margin: 5%;
 }
+
+.work-card {
+    background-color: black;
+    border-color: white;
+    border-radius: 0;
+}
+
+/** iPad Responsiveness**/
+@media (max-width: 850px){
+    .work-img {
+        width: 25vw;
+        text-align: center;
+    }
+
+    .work-img-col {
+        text-align: center;
+    }
+
+    .work-title {
+        font-weight: 700;
+    }
+}
+
+/** iPhone Responsiveness**/
+@media (max-width: 600px){
+    .work-img {
+        width: 25vmax;
+    }
+
+    .work-img-col {
+        text-align: center;
+    }
+}
+
 
 
 /****************************BOOTSTRAP CLASS OVERRIDE STYLES*******************************/
