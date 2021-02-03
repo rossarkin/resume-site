@@ -50,16 +50,15 @@ hr {
 }
 
 
-/**************************** NAVBAR CHANGES *******************************/
-.navbar-dark .navbar-toggler{
+.navbar-dark .navbar-toggler {
     width: 47px;
     height: 34px;
     border-radius: 0px;
     border-width: 1px;
     border-color: white;
-    }
+}
     
-.navbar-toggler .hamburger-line{
+.hamburger-line {
     width: 100%;
     float: left;
     height: 2px;
@@ -69,16 +68,16 @@ hr {
     transition-duration: 0.5s;
 }
 
-.menu-open1{
+.menu-open1 {
     transform: rotate(45deg) translate(5px, 5px);
 }
 
-.menu-open2{
+.menu-open2 {
     transform: translate(0px, 10px);
     background-color: transparent !important;
 }
 
-.menu-open3{
+.menu-open3 {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
