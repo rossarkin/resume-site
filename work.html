@@ -39,7 +39,9 @@
         <a class="navbar-brand" href="index.html">Ross Arkin.</a>
         <!--Code to create a hamburger button when the screen is shrunk-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="hamburger-line" id="hl-1"></span> 
+            <span class="hamburger-line" id="hl-2"></span> 
+            <span class="hamburger-line" id="hl-3" style="margin-bottom: 0;"></span>
           </button>
 
         <!--Code for our navbar-->
@@ -175,5 +177,16 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var line1 = document.getElementById("hl-1");
+        var line2 = document.getElementById("hl-2");
+        var line3 = document.getElementById("hl-3");
+        $('.navbar-toggler').click(function() {
+            console.log("test");
+            $(line1).toggleClass("menu-open1");
+            $(line2).toggleClass("menu-open2");
+            $(line3).toggleClass("menu-open3");
+        });
+    </script>
 </body>
 </html>

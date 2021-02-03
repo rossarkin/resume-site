@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!--Homemade Stylesheet-->
     <link rel="stylesheet" href="CSS/stylesheet.css">
+    <!--Hamburger Stylesheet-->
+    <!--Author of Hamburgers.CSS is John Suh at https://github.com/jonsuh/hamburgers-->
+    <link href="CSS/hamburgers.css" rel="stylesheet">
     <!--Font import-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
     <!--Favicon-->
@@ -39,7 +42,9 @@
         <a class="navbar-brand" href="index.html">Ross Arkin.</a>
         <!--Code to create a hamburger button when the screen is shrunk-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="hamburger-line" id="hl-1"></span> 
+            <span class="hamburger-line" id="hl-2"></span> 
+            <span class="hamburger-line" id="hl-3" style="margin-bottom: 0;"></span>
           </button>
 
         <!--Code for our navbar-->
@@ -424,5 +429,16 @@
             element = this;
         });
     </script>
+        <script type="text/javascript">
+            var line1 = document.getElementById("hl-1");
+            var line2 = document.getElementById("hl-2");
+            var line3 = document.getElementById("hl-3");
+            $('.navbar-toggler').click(function() {
+                console.log("test");
+                $(line1).toggleClass("menu-open1");
+                $(line2).toggleClass("menu-open2");
+                $(line3).toggleClass("menu-open3");
+            });
+        </script>
 </body>
 </html>
