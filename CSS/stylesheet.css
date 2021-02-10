@@ -196,6 +196,10 @@ hr {
         width: 24vmax;
         margin-top: 5%;
     }
+
+    .more-info {
+        display: none;
+    }
 }
 
 /*iPhone responsiveness*/
@@ -223,6 +227,10 @@ hr {
     .headshot-img {
         width: 10rem;
         margin-top: 5%;
+    }
+    
+    .more-info {
+        display: none;
     }
 }
 
